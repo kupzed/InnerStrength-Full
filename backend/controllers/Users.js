@@ -122,7 +122,7 @@ export const Login = async (req, res) => {
       },
     )
 
-    await updateUser(id, { refresh_token: accessToken })
+    // await updateUser(id, { refresh_token: accessToken })
 
     res.json({ accessToken, role, id })
   } catch (error) {
